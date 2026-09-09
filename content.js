@@ -51,7 +51,7 @@ window.PORTFOLIO = {
     "emailMissing": "联系方式待补充，请在 content.js 中替换邮箱并启用。",
     "backTop": "回到顶部",
     "mediaError": "暂时无法播放，请检查视频文件或浏览器格式支持。",
-    "videoUnavailable": "完整视频待添加"
+    "videoUnavailable": "视频暂不可用"
   },
   "hero": {
     "eyebrow": "AI CREATIVE PORTFOLIO",
@@ -87,8 +87,8 @@ window.PORTFOLIO = {
       "layout": "editorial-process",
       "title": "DIRTY GOLD",
       "category": "AI MUSIC VIDEO / ZERO-TO-ONE CREATIVE PROCESS",
-      "subtitle": "从零开始，完成一支多镜头 AI 音乐视频。",
-      "summary": "项目从一个空白想法开始，没有既定歌曲、人物、场景或视觉素材。从音乐概念与歌词出发，逐步发展人物与视觉方向，通过多轮图像与 prompt 迭代，再将人工整理后的 production prompt 与最终参考图输入 Seedance 2.0，生成完整的 15 秒多镜头音乐视频。",
+      "subtitle": "从零开始，把一个创意发展成多镜头 AI 音乐视频。",
+      "summary": "项目从一个初始想法开始，没有既定歌曲、人物、场景或视觉素材。从音乐概念与歌词出发，逐步发展人物与视觉方向，通过多轮图像与 prompt 迭代，再将人工整理后的 production prompt 与最终参考图输入 Seedance 2.0，生成多镜头 AI 音乐视频。",
       "role": "创意方向 / 音乐与内容概念 / Prompt Development / Visual Direction / AI Image Iteration / Manual Prompt Refinement / AI Video Production",
       "tools": "ChatGPT / AI Image Generation / Notes / Seedance 2.0",
       "cover": "assets/case-1/dirty-gold-cover-v2.png",
@@ -97,13 +97,13 @@ window.PORTFOLIO = {
         "type": "video",
         "src": "assets/worlds/world-01.mp4",
         "poster": "assets/worlds/world-01.jpg",
-        "alt": "DIRTY GOLD — 完整 15 秒 AI 音乐视频"
+        "alt": "DIRTY GOLD — 多镜头 AI 音乐视频"
       },
       "stages": [
         {
           "label": "01 / FROM ZERO",
           "title": "从空白开始",
-          "text": "最初只有一个方向：一个年轻的 British rock band，以及制作一支 15 秒音乐视频的目标。先从多个歌曲与 MV 概念中探索可能性，最终选择 “Dirty Gold” 继续发展。",
+          "text": "最初只有一个方向：一个年轻的 British rock band，以及发展一支 AI 音乐视频的初始想法。先从多个歌曲与 MV 概念中探索可能性，最终选择 “Dirty Gold” 继续发展。",
           "signal": "BLANK → OPTIONS → DIRECTION",
           "kind": "origin",
           "images": [
@@ -193,19 +193,18 @@ window.PORTFOLIO = {
         {
           "label": "05 / PRODUCTION",
           "title": "REFERENCE + PROMPT → SEEDANCE 2.0",
-          "text": "最终将选定参考图与人工整理后的 production prompt 输入 Seedance 2.0。人物表演、镜头切换、乐队动作、节奏与歌词内容均在 prompt 中进行描述，由模型生成完整的 15 秒 9:16 multi-shot 视频。",
+          "text": "将选定参考图与人工整理后的 production prompt 输入 Seedance 2.0，在 prompt 中描述人物表演、镜头切换、乐队动作、节奏与歌词内容，生成 9:16 multi-shot AI 音乐视频。",
           "kind": "production",
           "images": [
             {
               "src": "assets/case-1/evidence/seedance-production.jpg",
-              "alt": "Seedance 2.0：参考图、最终 prompt 与 15 秒竖屏视频输出"
+              "alt": "Seedance 2.0：参考图、最终 prompt 与多镜头竖屏 AI 音乐视频输出"
             }
           ],
           "tags": [
             "REFERENCE IMAGE",
             "FINAL PROMPT",
             "SEEDANCE 2.0",
-            "15 SEC",
             "9:16",
             "MULTI-SHOT"
           ]
@@ -213,7 +212,7 @@ window.PORTFOLIO = {
         {
           "label": "06 / FINAL FILM",
           "title": "最终作品",
-          "text": "从最初的空白方向，到歌曲、歌词、人物、视觉、prompt 与生成，最终形成完整的 15 秒 AI 音乐视频。",
+          "text": "从最初的方向，到歌曲、歌词、人物、视觉、prompt 与生成，最终形成多镜头 AI 音乐视频。",
           "kind": "film"
         }
       ]
@@ -510,17 +509,17 @@ window.PORTFOLIO = {
   },
   "featured": {
     "label": "FEATURED WORK / 重点作品",
-    "title": "从 0 开始，构建一支完整的 AI 音乐视频。",
+    "title": "从 0 开始，把一个想法变成 AI 音乐视频。",
     "category": "AI MUSIC VIDEO",
     "role": "Concept Development / Music & Lyrics / Visual Direction / Prompt Development / AI Video",
-    "description": "从最初的创意空白出发，发展音乐方向与歌词，建立人物、场景和整体视觉世界；通过多轮 prompt 迭代生成关键图像，再设计人物动作、镜头与场景变化的 motion prompt，最终在 Runway 中完成完整的多镜头 AI 音乐视频。",
+    "description": "从最初的想法出发，发展音乐方向与歌词，建立人物、场景和视觉语言；通过多轮 prompt 与图像迭代确定关键画面，再设计人物动作、镜头与场景变化，并在 Runway 中将这些元素转化为多镜头 AI 音乐视频。",
     "processLabel": "查看创作过程 →",
     "processLink": "#case-1",
     "media": {
       "type": "video",
       "src": "assets/featured/featured-video.mp4",
       "poster": "assets/featured/featured-poster.jpg",
-      "alt": "从 0 开始，构建一支完整的 AI 音乐视频。完整作品"
+      "alt": "从 0 开始，把一个想法变成 AI 音乐视频。"
     }
   },
   "worlds": {
@@ -549,7 +548,7 @@ window.PORTFOLIO = {
       "title": "LIVE ROOM",
       "category": "AI MUSIC VIDEO",
       "descriptor": "乐队 / 现场感 / 暖色空间",
-      "description": "以乐队表演与现场空间为核心建立视觉世界，通过人物、乐器、表演状态与不同镜头变化形成完整音乐视频表达。",
+      "description": "以乐队表演与现场空间为核心建立视觉世界，通过人物、乐器、表演状态与不同镜头变化形成多镜头 AI 音乐视频表达。",
       "poster": "assets/worlds/world-01.jpg",
       "video": "assets/worlds/world-01.mp4"
     },
