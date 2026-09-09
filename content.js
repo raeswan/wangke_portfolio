@@ -381,11 +381,11 @@ window.PORTFOLIO = {
           ],
           "sop": {
             "label": "TEAM DOCUMENTATION / SOP",
-            "title": "将复杂流程整理成可交接的 SOP",
-            "text": "将可重复的制作方法整理成 SOP，明确工具、步骤与交付方式，方便团队继续执行与交接。",
+            "title": "将原创内容制作流程整理成可交接的 SOP",
+            "text": "将原创短视频素材的制作方法整理成 SOP，明确内容方向、音乐 MV、口播素材与最终剪辑合成步骤，方便团队按统一流程继续执行与交接。",
             "image": {
-              "src": "assets/case-3/evidence/team-sop.png",
-              "alt": "口播与音乐 MV 制作 SOP：工作流总览与音频分离起始步骤"
+              "src": "assets/case-3/evidence/original-content-sop.png",
+              "alt": "Muvia 原创素材sop：王炣 · Modified May 21 · 原创短视频制作流程"
             }
           }
         }
