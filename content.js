@@ -503,7 +503,7 @@ window.PORTFOLIO = {
     "title": "下一次创意，\n从一次对话开始。",
     "email": "raeswanrae@gmail.com",
     "emailReady": true,
-    "cv": "assets/cv/Wang_Ke_CV.pdf",
+    "cv": "assets/cv/Wang_Ke_CV_2026.pdf",
     "cvReady": true,
     "footer": "AI Content · Creative Workflow",
     "phone": "13658005992"
