@@ -91,7 +91,7 @@ window.PORTFOLIO = {
       "summary": "项目从一个空白想法开始，没有既定歌曲、人物、场景或视觉素材。从音乐概念与歌词出发，逐步发展人物与视觉方向，通过多轮图像与 prompt 迭代，再将人工整理后的 production prompt 与最终参考图输入 Seedance 2.0，生成完整的 15 秒多镜头音乐视频。",
       "role": "创意方向 / 音乐与内容概念 / Prompt Development / Visual Direction / AI Image Iteration / Manual Prompt Refinement / AI Video Production",
       "tools": "ChatGPT / AI Image Generation / Notes / Seedance 2.0",
-      "cover": "assets/case-1/evidence/selected-direction.jpg",
+      "cover": "assets/case-1/dirty-gold-cover-v2.png",
       "coverAlt": "DIRTY GOLD：最终选定的红衬衫人物与排练室视觉方向",
       "media": {
         "type": "video",

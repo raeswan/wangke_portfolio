@@ -14,7 +14,7 @@
   previous.append(prevImage,create('span','', '←'));next.append(nextImage,create('span','', '→'));
   const current=create('div','wv-current'),box=create('div','wv-video-box'),video=create('video','wv-video');
   video.playsInline=true;video.preload='metadata';video.controls=false;video.muted=true;
-  const status=create('span','wv-status');status.setAttribute('role','status');box.append(video,status);
+  const status=create('span','wv-status');status.setAttribute('role','status');const fallback=button(t.play,'▷','wv-play-fallback');fallback.hidden=true;box.append(video,status,fallback);
   const title=create('h2','wv-title'),descriptor=create('p','wv-descriptor');
   const controls=create('div','wv-controls'),play=button(t.play,'▷'),seek=create('input','wv-seek'),sound=button(t.sound,'♪'),fullscreen=button(t.fullscreen,'⛶');
   seek.type='range';seek.min='0';seek.max='1000';seek.step='1';seek.value='0';seek.setAttribute('aria-label',t.seek);
@@ -26,18 +26,34 @@
   const pauseAll=()=>document.querySelectorAll('video').forEach(v=>v.pause());
   const updatePlay=()=>{play.textContent=video.paused?'▷':'Ⅱ';play.setAttribute('aria-label',video.paused?t.play:t.pause);};
   const updateSound=()=>{sound.textContent=video.muted?'♪':'♫';sound.setAttribute('aria-label',video.muted?t.sound:t.mute);sound.setAttribute('aria-pressed',String(!video.muted));};
+  const startPlayback=(audible=false)=>{
+    const token=changeToken;
+    fallback.hidden=true;
+    document.querySelectorAll('video').forEach(v=>{if(v!==video)v.pause();});
+    if(audible){video.muted=false;video.volume=1;updateSound();}
+    video.play().then(()=>{
+      if(token===changeToken&&dialog.open)fallback.hidden=true;
+    }).catch(error=>{
+      if(token!==changeToken||!dialog.open||error.name==='AbortError')return;
+      fallback.hidden=false;
+      if(error.name!=='NotAllowedError')status.textContent=t.error;
+      updatePlay();
+    });
+  };
   const setWork=number=>{
     changeToken++;pauseAll();index=(number+works.length)%works.length;
-    const work=works[index];video.removeAttribute('src');video.load();video.muted=true;video.poster=work.poster;video.src=work.video;video.setAttribute('aria-label',work.title);video.load();
+    const work=works[index];video.removeAttribute('src');video.load();video.muted=false;video.volume=1;video.poster=work.poster;video.src=work.video;video.setAttribute('aria-label',work.title);video.load();
     title.textContent=work.title;descriptor.textContent=work.descriptor;count.textContent=`${String(index+1).padStart(2,'0')} / ${String(works.length).padStart(2,'0')}`;
     const before=works[(index-1+works.length)%works.length],after=works[(index+1)%works.length];prevImage.src=before.poster;nextImage.src=after.poster;
     previous.setAttribute('aria-label',`${t.previous}：${before.title}`);next.setAttribute('aria-label',`${t.next}：${after.title}`);
     seek.value='0';seek.disabled=true;status.textContent='';updatePlay();updateSound();
     current.getAnimations().forEach(a=>a.cancel());
     if(!reduced())current.animate([{opacity:.25,transform:'translateY(4px)'},{opacity:1,transform:'translateY(0)'}],{duration:240,easing:'ease-out'});
+    startPlayback(true);
   };
-  const open=number=>{returnFocus=document.activeElement;stopHover();setWork(number);dialog.showModal();document.body.classList.add('modal-open');close.focus();};
-  const togglePlay=()=>{if(video.paused){document.querySelectorAll('video').forEach(v=>{if(v!==video)v.pause();});video.play().catch(()=>{status.textContent=t.error;});}else video.pause();};
+  const open=number=>{returnFocus=document.activeElement;stopHover();dialog.showModal();setWork(number);document.body.classList.add('modal-open');close.focus();};
+  const togglePlay=()=>{if(video.paused)startPlayback(!fallback.hidden);else {fallback.hidden=true;video.pause();}};
+  fallback.addEventListener('click',()=>startPlayback(true));
   play.addEventListener('click',togglePlay);video.addEventListener('click',togglePlay);
   video.addEventListener('play',updatePlay);video.addEventListener('pause',updatePlay);video.addEventListener('ended',updatePlay);
   video.addEventListener('loadedmetadata',()=>{seek.disabled=false;status.textContent='';});
@@ -53,7 +69,7 @@
   dialog.addEventListener('keydown',e=>{if(e.target===seek)return;if(e.key==='ArrowLeft'){e.preventDefault();setWork(index-1);}if(e.key==='ArrowRight'){e.preventDefault();setWork(index+1);}if(e.key===' '&&e.target===video){e.preventDefault();togglePlay();}});
   box.addEventListener('touchstart',e=>{touchStart={x:e.changedTouches[0].clientX,y:e.changedTouches[0].clientY};},{passive:true});
   box.addEventListener('touchend',e=>{if(!touchStart)return;const dx=e.changedTouches[0].clientX-touchStart.x,dy=e.changedTouches[0].clientY-touchStart.y;touchStart=null;if(Math.abs(dx)>45&&Math.abs(dx)>Math.abs(dy)*1.3)setWork(index+(dx<0?1:-1));},{passive:true});
-  dialog.addEventListener('close',()=>{changeToken++;pauseAll();video.removeAttribute('src');video.load();if(document.fullscreenElement)document.exitFullscreen().catch(()=>{});document.body.classList.remove('modal-open');returnFocus?.focus();});
+  dialog.addEventListener('close',()=>{changeToken++;fallback.hidden=true;pauseAll();video.removeAttribute('src');video.load();if(document.fullscreenElement)document.exitFullscreen().catch(()=>{});document.body.classList.remove('modal-open');returnFocus?.focus();});
   // The grid starts with posters only. At most one delayed, muted hover preview exists.
   let hoverVideo=null,hoverTimer=null,hoverSurface=null;
   function stopHover(){clearTimeout(hoverTimer);hoverTimer=null;if(hoverVideo){hoverVideo.pause();hoverVideo.removeAttribute('src');hoverVideo.load();hoverVideo.remove();hoverVideo=null;}hoverSurface=null;}
