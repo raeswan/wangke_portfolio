@@ -2,13 +2,13 @@
 
 h1 span{white-space:nowrap}
 
-/* Conversion and creative foundation use the existing editorial rules. */
+/* Conversion follows the existing editorial rules. */
 .conversion-flow{list-style:none;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:24px;margin:48px 0 0;padding:28px 0;border-block:1px solid var(--line)}
 .conversion-flow li{position:relative;font-size:11px;line-height:1.7;letter-spacing:.6px}
 .conversion-flow li:not(:last-child)::after{content:'→';position:absolute;right:-18px;top:0;color:var(--muted)}
 .conversion-support{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 36px;margin:26px 0 0;padding-left:18px;font-size:14px;line-height:1.8;color:#62665d}
 .conversion-support li:last-child{grid-column:1/-1}
-.creative-capabilities{list-style:none;display:flex;flex-wrap:wrap;gap:22px 42px;margin:36px 0 0;padding:28px 0 0;border-top:1px solid var(--line);font-size:12px;line-height:1.8;letter-spacing:1px}
+
 .loop{counter-reset:step}
 .loop li{counter-increment:step}
 .loop li::before{content:counter(step,decimal-leading-zero);display:block;margin-bottom:14px;font-size:10px;letter-spacing:1px;color:var(--muted)}
@@ -18,6 +18,6 @@ h1 span{white-space:nowrap}
 .contact .creative-link:hover{background:#d8dccf}
 @media(max-width:900px){nav{gap:20px}.conversion-flow{gap:20px}.conversion-flow li{font-size:10px}.conversion-flow li:not(:last-child)::after{right:-15px}}
 @media(max-width:760px){header{height:auto;min-height:100px;flex-wrap:wrap;padding-block:22px;gap:20px}nav{width:100%;justify-content:space-between;gap:12px;font-size:12px}}
-@media(max-width:650px){nav{display:grid;grid-template-columns:repeat(3,auto);gap:16px 20px}nav a{padding-block:4px}.conversion-flow{grid-template-columns:1fr;margin-top:32px;padding:24px 0;gap:25px}.conversion-flow li{font-size:12px;letter-spacing:.8px}.conversion-flow li:not(:last-child)::after{content:'↓';left:0;right:auto;top:24px}.conversion-support{grid-template-columns:1fr;gap:10px}.creative-capabilities{gap:18px 26px;font-size:11px}.loop li:not(:last-child)::after{top:58px}.loop li::before{margin-bottom:8px}}
+@media(max-width:650px){nav{display:grid;grid-template-columns:repeat(3,auto);gap:16px 20px}nav a{padding-block:4px}.conversion-flow{grid-template-columns:1fr;margin-top:32px;padding:24px 0;gap:25px}.conversion-flow li{font-size:12px;letter-spacing:.8px}.conversion-flow li:not(:last-child)::after{content:'↓';left:0;right:auto;top:24px}.conversion-support{grid-template-columns:1fr;gap:10px}.loop li:not(:last-child)::after{top:58px}.loop li::before{margin-bottom:8px}}
 /* Balance longer section titles without changing the type scale. */
 h2{text-wrap:balance}
