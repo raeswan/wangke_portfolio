@@ -14,8 +14,6 @@ h1 span{white-space:nowrap}
 .loop li::before{content:counter(step,decimal-leading-zero);display:block;margin-bottom:14px;font-size:10px;letter-spacing:1px;color:var(--muted)}
 .loop li:not(:last-child)::after{top:26px}
 .contact .contact-actions{flex-direction:column;align-items:stretch;justify-content:flex-end;gap:12px}
-.contact .creative-link{background:#e5e7de}
-.contact .creative-link:hover{background:#d8dccf}
 @media(max-width:900px){nav{gap:20px}.conversion-flow{gap:20px}.conversion-flow li{font-size:10px}.conversion-flow li:not(:last-child)::after{right:-15px}}
 @media(max-width:760px){header{height:auto;min-height:100px;flex-wrap:wrap;padding-block:22px;gap:20px}nav{width:100%;justify-content:space-between;gap:12px;font-size:12px}}
 @media(max-width:650px){nav{display:grid;grid-template-columns:repeat(3,auto);gap:16px 20px}nav a{padding-block:4px}.conversion-flow{grid-template-columns:1fr;margin-top:32px;padding:24px 0;gap:25px}.conversion-flow li{font-size:12px;letter-spacing:.8px}.conversion-flow li:not(:last-child)::after{content:'↓';left:0;right:auto;top:24px}.conversion-support{grid-template-columns:1fr;gap:10px}.loop li:not(:last-child)::after{top:58px}.loop li::before{margin-bottom:8px}}
