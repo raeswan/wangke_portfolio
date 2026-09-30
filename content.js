@@ -4,7 +4,7 @@
 window.PORTFOLIO = {
   "meta": {
     "title": "王炣 — AI 内容与创意",
-    "description": "王炣的 AI 内容与创意作品集：生成式视频、视觉概念与可复用 AI 工作流。"
+    "description": "王炣的 AI Creative Portfolio：Creative Strategy、AI 视频、视觉概念、内容制作与 AI Workflow。"
   },
   "name": "王炣",
   "romanName": "WANG KE",
@@ -15,15 +15,15 @@ window.PORTFOLIO = {
       "href": "#works"
     },
     {
-      "label": "方法",
+      "label": "创作方法",
       "href": "#workflow"
     },
     {
-      "label": "经验",
+      "label": "背景",
       "href": "#experience"
     },
     {
-      "label": "联系方式",
+      "label": "联系",
       "href": "#contact"
     }
   ],
@@ -59,20 +59,21 @@ window.PORTFOLIO = {
       "让想法",
       "成为可见的表达。"
     ],
-    "focus": "AI 内容与创意｜AI 工作流",
-    "english": "AI Content · Creative Workflow",
-    "intro": "从创意方向、prompt 设计到图像与动态生成，\n将想法转化为具有表达力的 AI 内容。"
+    "focus": "AI 内容与创意｜Creative Strategy｜Visual Direction",
+    "english": "AI Creative Content · Creative Strategy · Visual Direction",
+    "intro": "从创意方向、人物、音乐与视觉语言，\n到图像、动态与最终内容，\n将一个想法逐步发展成完整的表达。"
   },
   "intro": {
     "label": "01 / PROFILE",
-    "title": "在 AI 与创意之间，\n把方向变成内容。",
-    "text": "具备 AI 内容制作、生成式视频、内容增长及 AI 工作流实践经验。近期在科技公司负责 AI Content，参与 AI 视频、广告创意及不同产品方向的内容实验，使用 Runway、Codex 等工具完成从创意、生成、迭代到交付，并搭建可复用的 AI skills / workflows 支持团队工作。此前长期从事海外内容增长及品牌音乐内容工作，具备跨媒介创意判断、海外用户理解及英文工作能力。具备较强的自驱学习、独立执行与快速适应能力。",
+    "title": "从长期创意实践，\n到 AI 生成内容。",
+    "text": "长期从事音乐、品牌内容及海外内容创作，对音乐、画面、节奏、品牌调性和用户感受形成持续的创意判断。此后独立创建并运营面向海外用户的数字产品与内容业务，并持续探索不同形式的内容表达。\n\n现在将生成式 AI 应用于音乐视频、视觉概念、广告内容及创意实验，从 concept、visual direction、prompt development、生成与筛选，到 motion、editing 和最终交付，逐步建立自己的 AI creative workflow。\n\n长期面向海外用户及国际品牌工作，英语可作为工作语言。",
     "tags": [
-      "Runway · Seedance · AI 图片与视频生成",
-      "Codex · Claude · ChatGPT · n8n",
-      "Canva · CapCut · Davinci Resolve",
-      "Content Strategy · Social Growth",
-      "中文｜English as a working language"
+      "Creative Strategy · Visual Direction",
+      "AI Video · Generative Content",
+      "Runway · Seedance · AI Image Generation",
+      "Codex · Claude · ChatGPT",
+      "DaVinci Resolve · Canva · CapCut",
+      "中文 · English as a working language"
     ]
   },
   "works": {
@@ -221,16 +222,16 @@ window.PORTFOLIO = {
       "id": "case-2",
       "number": "02",
       "layout": "ad-showcase",
-      "category": "AI AD CREATIVE / PRODUCT CONTENT",
+      "category": "AI AD CREATIVE / CONTENT EXPERIMENTS",
       "title": "AI 广告内容实验",
-      "summary": "为不同产品方向制作 AI 广告内容与短视频实验，根据 brief 快速发展创意路径，并输出适合展示、测试与投放方向的视觉素材。",
-      "role": "创意构思 / Prompt 设计 / AI 内容制作 / 输出迭代",
+      "summary": "根据不同产品方向和 brief，快速发展内容概念、人物场景、视觉表达及短视频结构，并使用生成式 AI 完成创意测试与内容输出。重点在于根据产品和受众选择不同的表达方式，而不是使用同一种 AI 风格处理所有内容。",
+      "role": "Creative Direction / Concept Development / Visual Direction / AI Content Production / Iteration",
       "tools": "ChatGPT / Runway / Codex / Omni / Seedance / FFmpeg",
       "note": "3 个产品方向 · 6 支短视频内容",
       "cta": "展开精选内容",
       "closeCta": "收起精选内容",
       "previewCaption": "不同产品方向 · 广告内容集合",
-      "galleryIntro": "覆盖音乐 / 内容产品、金融工具与电商创意工具等不同产品方向，根据 brief 快速发展视觉概念，并完成适合展示、测试与投放方向的短视频广告内容。",
+      "galleryIntro": "音乐 / 内容产品、金融工具与电商创意工具：三个方向，分别测试人物、场景与短视频表达。",
       "groups": [
         {
           "label": "AI MUSIC / CONTENT PRODUCT",
@@ -295,12 +296,12 @@ window.PORTFOLIO = {
       "id": "case-3",
       "number": "03",
       "layout": "workflow-showcase",
-      "category": "WORKFLOW / AI PRODUCTIVITY",
+      "category": "AI WORKFLOW / CREATIVE SYSTEMS",
       "title": "AI Workflow / Skills 构建",
-      "summary": "将重复、耗时或依赖个人经验的工作拆解为可复用工具、自动化流程与团队方法，支持内容运营和日常协作。",
-      "role": "需求拆解 / Workflow Design / Codex / Scripts / Automation / Team Handoff",
+      "summary": "从实际内容与创意工作中的重复问题出发，将部分研究、数据整理、内容分析和生产步骤整理成可复用的 AI skills、workflow 与内部工具，提高创作与执行效率。",
+      "role": "Problem Framing / Workflow Design / Codex / AI Skills / Documentation",
       "tools": "Codex / ChatGPT / Python / Local Scripts / Automation",
-      "previewCaption": "重复工作 × 可复用系统",
+      "previewCaption": "内容与创意工作中的可复用方法",
       "preview": [
         {
           "src": "assets/case-3/evidence/discovery-report.png",
@@ -312,12 +313,12 @@ window.PORTFOLIO = {
         },
         {
           "src": "assets/case-3/evidence/team-package.png",
-          "alt": "可复用团队包结构：scripts、schemas、docs 与交接文档"
+          "alt": "可复用 Codex Skill：scripts、schemas 与使用文档"
         }
       ],
       "cta": "展开 Workflow 案例",
       "closeCta": "收起 Workflow 案例",
-      "intro": "这些案例覆盖内容发现、数据汇总与团队交付。我从实际工作需求出发，识别重复环节，并把它们转化为可运行、可复用、可交接的解决方案。",
+      "intro": "从内容发现、数据比较到制作步骤整理，识别实际工作中的重复环节，再建立可以持续使用的方法。",
       "problemLabel": "PROBLEM",
       "solutionLabel": "SOLUTION",
       "examples": [
@@ -325,7 +326,7 @@ window.PORTFOLIO = {
           "label": "01 / DISCOVER",
           "category": "VIRAL CONTENT DISCOVERY",
           "title": "爆款内容发现工具",
-          "problem": "运营需要持续寻找高播放、高互动的内容作为选题和创意参考，人工逐个查看账号和内容耗时较高，也不容易快速比较。",
+          "problem": "内容研究需要持续寻找高播放、高互动的作品作为选题和创意参考，逐个查看账号和内容耗时，也不容易快速比较。",
           "solution": "搭建内容汇总与筛选工具，将指定内容源的数据整理成可浏览的 ViralIG Feed，并支持按播放量等指标快速查看高表现内容。",
           "images": [
             {
@@ -361,30 +362,29 @@ window.PORTFOLIO = {
         },
         {
           "label": "03 / SYSTEMIZE",
-          "category": "REUSABLE SKILL + TEAM HANDOFF",
-          "title": "把方法变成团队可复用的 Skill",
-          "problem": "视频分析、生成与输出步骤分散，团队重复执行和交接时，需要统一的方法与说明。",
-          "solution": "针对爆款视频复刻与团队内容生产，把原本分散的分析、生成和输出步骤整理成一个可复用的 Codex Skill / team package，包括脚本、schemas、文档与标准化流程，方便团队按统一方式运行和交接。",
+          "category": "REUSABLE CODEX SKILLS / WORKFLOWS",
+          "title": "把重复步骤整理成 Codex Skill",
+          "problem": "视频分析、生成与输出步骤分散，重复执行时需要清晰的方法与说明。",
+          "solution": "将视频内容分析、生成和输出步骤整理成可复用的 Codex Skill，包括脚本、schemas、文档与标准化流程，方便在实际内容制作中重复使用。",
           "images": [
             {
               "src": "assets/case-3/evidence/team-package.png",
-              "alt": "可复用团队包结构：scripts、schemas、docs 与交接文档"
+              "alt": "可复用 Codex Skill：scripts、schemas 与使用文档"
             }
           ],
           "tags": [
             "CODEX",
             "REUSABLE SKILL",
-            "PYTHON SCRIPTS",
-            "DOCUMENTATION",
-            "TEAM HANDOFF"
+            "CONTENT PRODUCTION",
+            "DOCUMENTATION"
           ],
           "sop": {
-            "label": "TEAM DOCUMENTATION / SOP",
-            "title": "将原创内容制作流程整理成可交接的 SOP",
-            "text": "将原创短视频素材的制作方法整理成 SOP，明确内容方向、音乐 MV、口播素材与最终剪辑合成步骤，方便团队按统一流程继续执行与交接。",
+            "label": "SOP / DOCUMENTATION",
+            "title": "将内容制作方法整理为 SOP",
+            "text": "记录内容方向、音乐 MV、口播素材与最终剪辑合成步骤，方便重复使用与协作。",
             "image": {
               "src": "assets/case-3/evidence/original-content-sop.png",
-              "alt": "Muvia 原创素材sop：王炣 · Modified May 21 · 原创短视频制作流程"
+              "alt": "原创短视频制作流程 · SOP / Documentation"
             }
           }
         }
@@ -394,126 +394,122 @@ window.PORTFOLIO = {
   "workflow": {
     "label": "03 / CREATIVE WORKFLOW",
     "title": "清晰的方向。\n持续的迭代。",
-    "text": "通过清晰的创意判断、prompt 迭代与视觉筛选，把想法逐步转化为具有表达力的 AI 内容。",
+    "text": "从概念、音乐、人物和视觉方向开始，通过生成、判断、筛选与持续迭代，把一个抽象想法逐步转化为完整内容。",
     "steps": [
       {
-        "title": "定义创意方向",
-        "text": "从空白开始明确作品要表达什么，以及整体内容方向。",
-        "tag": "CREATIVE DIRECTION"
+        "title": "定义核心概念",
+        "text": "明确作品真正要表达的内容、情绪与方向。",
+        "tag": "CONCEPT"
       },
       {
         "title": "发展内容与世界",
-        "text": "根据项目发展脚本、音乐、人物、场景或内容结构。",
-        "tag": "CONTENT & WORLD BUILDING"
+        "text": "发展音乐、人物、场景、故事或内容结构。",
+        "tag": "CONTENT & WORLD"
       },
       {
         "title": "建立视觉语言",
-        "text": "明确风格、情绪、构图、节奏与整体视觉表达。",
-        "tag": "VISUAL LANGUAGE"
+        "text": "确定构图、颜色、材质、人物状态、空间与整体气质。",
+        "tag": "VISUAL DIRECTION"
       },
       {
-        "title": "Prompt 与生成迭代",
-        "text": "持续测试、修改、生成与筛选，把方向逐渐转化为具体内容。",
-        "tag": "PROMPT & GENERATION"
+        "title": "生成与判断",
+        "text": "通过 prompt、图像与不同结果持续测试，并主动筛选与调整。",
+        "tag": "GENERATE & SELECT"
       },
       {
         "title": "Motion / Production",
-        "text": "将视觉方向转化为动态内容，控制人物、动作、镜头、环境与节奏。",
+        "text": "将视觉方向转化为人物动作、镜头、场景变化与动态内容。",
         "tag": "MOTION / PRODUCTION"
       },
       {
-        "title": "筛选、调整与交付",
-        "text": "根据生成结果持续判断与优化，完成最终可用内容。",
+        "title": "Refine & Deliver",
+        "text": "继续调整节奏、画面与细节，形成最终可使用内容。",
         "tag": "REFINE & DELIVER"
       }
     ]
   },
   "experience": {
-    "label": "04 / EXPERIENCE",
-    "title": "不同媒介，同一份创意判断。",
+    "label": "04 / BACKGROUND",
+    "title": "不同阶段，持续扩展同一种能力。",
     "items": [
       {
-        "company": "武汉洛希极限智能科技有限公司",
-        "extra": "Riffle · 2026 年 1 月 – 2026 年 8 月",
-        "role": "AI Content｜内容创意与运营",
+        "company": "RAE SWAN INC.",
+        "extra": "2024 – 2026",
+        "role": "创始人｜Digital Product, Global Content & Growth",
         "points": [
-          "负责 AI Content 创作及内容实验，根据产品 brief、业务及投放需求测试创意方向，制作短视频、广告及视觉素材，并根据反馈迭代。",
-          "使用 Runway 等生成式 AI 工具，完成创意构思、AI 图片与视频生成、筛选迭代及内容交付。",
-          "使用 Codex 搭建可复用的 AI skills / workflows，将部分重复性流程工具化，供团队成员在实际工作中使用。",
-          "参与 Instagram 等海外社媒内容策划、制作、剪辑及增长实验，单条内容达到 100 万+观看。"
+          "从 0 到 1 创建并运营面向海外用户的数字产品与内容业务。",
+          "搭建 Instagram、TikTok 等海外内容渠道，Instagram 主账号实现数万级粉丝增长，多个内容达到百万级观看。",
+          "建立从内容自然流量、DM / ManyChat、lead capture、Email / Newsletter Marketing 到数字产品销售的转化路径。",
+          "独立完成英文产品、内容、营销及用户沟通，并持续根据反馈优化内容与 conversion。"
         ]
       },
       {
-        "company": "Rae Swan Inc.",
-        "extra": "2023 年 – 2025 年",
-        "role": "创始人｜海外内容与增长",
+        "company": "AI / TECH COLLABORATIONS",
+        "extra": "2026",
+        "role": "AI Content｜Creative Production｜Workflow",
         "points": [
-          "独立搭建并运营 Instagram、TikTok 等海外账号，负责定位、选题、制作、发布及增长；Instagram 主账号实现数万级粉丝增长，多个内容达到百万级观看。",
-          "从 0 到 1 搭建数字产品销售体系，通过内容自然流量实现产品销售与持续转化。",
-          "独立完成英文产品内容、销售文案、邮件及社媒内容，使用 Manychat / Email Marketing 搭建自动化用户转化流程。",
-          "根据内容表现与用户反馈，持续分析、测试并优化内容方向及转化流程。"
+          "与 AI 科技产品及团队合作，参与海外内容、创意测试、内容增长及 AI workflow 相关工作。",
+          "参与 Instagram 等海外内容策划、制作及增长实验，单条内容达到 100 万+观看。",
+          "使用 Runway、Seedance 等生成式 AI 工具完成 AI 图片、视频、广告及产品内容制作。",
+          "使用 Codex 搭建 AI skills / workflows、Viral Content Discovery、内容数据汇总等实际工作工具。"
         ]
       },
       {
         "company": "W 酒店 / 成都丽思卡尔顿 / 成都尼依格罗酒店",
-        "extra": "2017 年 – 2022 年",
+        "extra": "2017 – 2022",
         "role": "品牌音乐内容策划｜Music Manager",
         "points": [
-          "负责品牌音乐内容、现场氛围及整体风格策划，根据品牌与场景调整表达，协调音乐、品牌及现场体验，保持品牌定位一致。",
-          "长期参与音乐及现场演出制作，对音乐节奏、视觉氛围、品牌调性及用户体验形成综合判断。",
-          "与国内外品牌团队及客户进行中英文沟通，参与国际品牌活动及内容执行。"
-        ]
-      },
-      {
-        "company": "厦门 MIID 有限公司",
-        "extra": "2015 年 – 2016 年",
-        "role": "市场营销运营助理",
-        "points": [
-          "参与产品内容运营、市场活动及品牌合作执行。",
-          "协助社交媒体内容策划、用户推广及品牌传播工作。"
+          "长期从事国际高端酒店品牌音乐内容、现场氛围及整体风格策划。",
+          "在音乐、品牌和用户体验之间进行持续的内容与创意判断。",
+          "长期参与音乐及现场演出制作，对音乐、节奏、视觉氛围、品牌调性及用户体验形成综合判断。",
+          "与国内外品牌团队及客户进行中英文沟通。"
         ]
       }
     ]
   },
   "strengths": {
-    "label": "05 / WHAT I BRING",
-    "title": "把能力转化为交付。",
+    "label": "05 / CREATIVE STRENGTHS",
+    "title": "创意判断，也能落到实际输出。",
     "items": [
       {
-        "title": "自驱学习与快速上手",
-        "text": "音乐制作、海外内容增长、AI 内容及 AI 工作流等核心能力主要通过长期自学与实际项目建立，能够快速掌握新工具、新方法，并转化为实际工作产出。"
-      },
-      {
-        "title": "独立解决问题与从 0 到 1",
-        "text": "习惯自主拆解目标、寻找解决方案、搭建流程并持续迭代，能够在较少外部指导的情况下推进项目从想法到实际交付。"
-      },
-      {
         "title": "跨媒介创意判断",
-        "text": "对画面、声音、节奏、品牌调性和用户感受具有较强感知，能够在音乐、视觉、内容与 AI 生成之间建立统一的创意判断。"
+        "text": "长期在音乐、品牌、视觉、内容与 AI 生成之间工作，对画面、声音、节奏、人物状态、品牌调性和用户感受具有持续的判断能力。"
       },
       {
-        "title": "跨文化与英文工作能力",
-        "text": "长期面向海外用户及国际品牌工作，能够使用英文进行沟通、写作和内容执行，并理解不同市场与受众的表达差异。"
+        "title": "从 0 到 1",
+        "text": "能够从空白开始发展概念、内容、人物与视觉方向，并持续推进到最终可使用的内容输出。"
+      },
+      {
+        "title": "快速学习与实际应用",
+        "text": "长期通过实际项目学习新的工具与方法，并快速将其转化为真实的创作和工作流程。"
+      },
+      {
+        "title": "跨文化与英文工作",
+        "text": "长期面向海外用户及国际品牌工作，能够使用英文进行沟通、内容写作及创意执行。"
       }
     ]
   },
   "contact": {
     "label": "06 / CONTACT",
-    "title": "下一次创意，\n从一次对话开始。",
+    "title": "有新的内容或创意，\n可以从这里开始。",
     "email": "raeswanrae@gmail.com",
     "emailReady": true,
     "cv": "assets/cv/Wang_Ke_CV_2026.pdf",
     "cvReady": true,
-    "footer": "AI Content · Creative Workflow",
-    "phone": "13658005992"
+    "footer": "AI Creative Content · Creative Strategy · Visual Direction",
+    "phone": "13658005992",
+    "growthLink": {
+      "label": "Growth / Digital Marketing Portfolio ↗",
+      "href": "growth/"
+    }
   },
   "featured": {
     "label": "FEATURED WORK / 重点作品",
     "title": "从 0 开始，把一个想法变成 AI 音乐视频。",
     "category": "AI MUSIC VIDEO",
     "role": "Concept Development / Music & Lyrics / Visual Direction / Prompt Development / AI Video",
-    "description": "从最初的想法出发，发展音乐方向与歌词，建立人物、场景和视觉语言；通过多轮 prompt 与图像迭代确定关键画面，再设计人物动作、镜头与场景变化，并在 Runway 中将这些元素转化为多镜头 AI 音乐视频。",
-    "processLabel": "查看创作过程 →",
+    "description": "从最初的想法出发，发展音乐方向与歌词，建立人物、场景和视觉语言；通过多轮 prompt 与图像迭代确定关键画面，再设计人物动作、镜头与场景变化，逐步完成多镜头 AI 音乐视频。",
+    "processLabel": "查看 DIRTY GOLD 创作过程 →",
     "processLink": "#case-1",
     "media": {
       "type": "video",
@@ -525,7 +521,7 @@ window.PORTFOLIO = {
   "worlds": {
     "label": "SELECTED WORLDS / 不同的视觉世界",
     "title": "不同世界，同一种方法。",
-    "description": "每个作品拥有独立的音乐、人物、场景与视觉语言，但都来自同一种创作逻辑：从最初的想法出发，逐步发展内容、人物与视觉世界，再通过 prompt、图像生成与动态设计完成最终作品。"
+    "description": "每个作品建立不同的人物、音乐、空间、色彩与视觉语言。从最初的概念出发，通过图像、prompt、筛选与动态生成，逐步形成独立的视觉世界。"
   },
   "selectedWorlds": [
     {

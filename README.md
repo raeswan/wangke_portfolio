@@ -1,5 +1,7 @@
 # Wang Ke Portfolio
 
-AI Content · Creative Workflow
+AI Creative Content · Creative Strategy · AI Workflow
 
-Portfolio: https://raeswan.github.io/wangke_portfolio/
+Creative Portfolio: https://raeswan.github.io/wangke_portfolio/
+
+Growth / Digital Marketing Portfolio: https://raeswan.github.io/wangke_portfolio/growth/
